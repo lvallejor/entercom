@@ -1,0 +1,70 @@
+<html>
+
+<style>
+
+    
+    #barra{
+        margin:0;
+        padding: 0;
+        list-style: none;
+        text-transform: uppercase;
+        text-align: right;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #barra li{
+        color: white;
+        background-color: darkolivegreen;
+        display: inline;
+        margin: 0 20px;
+        
+    }
+
+    #logo{
+        border-color: red;
+        margin: 30 20px;
+        color: #B4F700;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #footer{
+        color: white;
+        background-color: darkolivegreen;
+        display: inline;
+        margin: 0 20px;
+    }
+
+</style>
+
+<head>
+      <style>
+            body { 
+                background-color:3F8B83; 
+                
+                }
+        </style>
+        <strong><h1 id="logo">ENTER Com</h1></strong>
+
+        <ul  id="barra">
+            <li>Inicio</li>
+            <li>Soluciones</li>
+            <li>Servicios</li>
+            <li>Contactenos</li>
+    
+        </ul>
+</head>
+
+<body>
+   
+
+    {% include "contenidos/contenido.html" %}
+
+    {% block content %} {% endblock %}
+
+
+
+    <p id="footer">Entercom le damos valor a tu idea y logos de las redes sociales</p>
+
+</body>
+
+</html>
